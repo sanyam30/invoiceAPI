@@ -12,40 +12,70 @@ To run the project
 The Project has 5 API's
 
 1. Upload Invoice
+
    Endpoint URL -> http://localhost:8080/api/upload-invoice
+   
+   
    Request type: POST
+   
+   
    Parameters required:
       invoiceNum, file
      
 
 2. Get Status 
+
     Endpoint URL -> http://localhost:8080/api/status/<int:invoiceNum>
+    
     Request type: GET
     
 3. Get Invoice
+
    Endpoint URL -> http://localhost:8080/api/get-invoice/<int:invoiceNum>
+   
    Request type: GET
 
 4. Update Invoice
+
+
    Endpoint URL -> http://localhost:8080/api/update-invoice
+   
    Request type: PATCH
+   
    parameter required:
-    {
+   
+   {
+   
     "invoiceNum" : (mandatory) ,
+    
     "invoiceDate":"",
+    
     "buyer": "",
+    
     "buyerAddress" :"",
+    
     "seller" : "",
+    
     "sellerAddress" : "",
+    
     "lineItems": "[{'item':'','cost':'','qty':'','amount':''}]",
+    
     "subtotal" :,
+    
     "tax" :,
+    
     "totalAmount" :
+    
   }
 
 
 5. Mark Digitized
+
+
    Endpoint URL -> http://localhost:8080/api/mark-digitized
+   
    Request type: POST
+   
    parameter required:
+   
    {"invoiceNum":<number>}(mandatory)
