@@ -6,14 +6,14 @@ To run the project
 2. source env/bin/activate
 3. pip install -r requirements.txt
 4. python manage.py runserver
-5. go to http://localhost:8080/api/
+5. go to http://localhost:8000/api/
 
 
 The Project has 5 API's
 
 1. Upload Invoice
 
-   Endpoint URL -> http://localhost:8080/api/upload-invoice
+   Endpoint URL -> http://localhost:8000/api/upload-invoice
    
    
    Request type: POST
@@ -25,20 +25,20 @@ The Project has 5 API's
 
 2. Get Status 
 
-    Endpoint URL -> http://localhost:8080/api/status/<int:invoiceNum>
+    Endpoint URL -> http://localhost:8000/api/status/<int:invoiceNum>
     
     Request type: GET
     
 3. Get Invoice
 
-   Endpoint URL -> http://localhost:8080/api/get-invoice/<int:invoiceNum>
+   Endpoint URL -> http://localhost:8000/api/get-invoice/<int:invoiceNum>
    
    Request type: GET
 
 4. Update Invoice
 
 
-   Endpoint URL -> http://localhost:8080/api/update-invoice
+   Endpoint URL -> http://localhost:8000/api/update-invoice
    
    Request type: PATCH
    
@@ -72,7 +72,7 @@ The Project has 5 API's
 5. Mark Digitized
 
 
-   Endpoint URL -> http://localhost:8080/api/mark-digitized
+   Endpoint URL -> http://localhost:8000/api/mark-digitized
    
    Request type: POST
    
